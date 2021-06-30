@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Slide show</title>
+        <meta name="view-port" content="width=device-width, initial-scale=1.0"/>
+        <style>
+            .image{
+                width: 600px;
+                height: 500px;
+                border-radius: 15px;
+            }
+            #img2{
+                width:70px;
+            }
+            #img3{
+                width: 70px;
+            }
+            #img4{
+                width: 70px;
+            }
+            p{
+                font-size: 32px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+        <img id="img1" onclick="change1()" class="image" src="img1.jpg">
+        <img id="img2" onclick="change2()" class="image" src="img2.jpg">
+        <img id="img3" onclick="change3()" class="image" src="img3.jpg">
+        <img id="img4" onclick="change4()" class="image" src="img4.jpg">
+        <div>
+            <p>Click on the image to enlarge</p>
+        </div>
+    </center>
+    <script>
+        function change1(){
+            var p1=document.getElementById('img1');
+            var q1=document.getElementById('img2');
+            var r1=document.getElementById('img3');
+            var s1=document.getElementById('img4');
+            p1.style.width='600px';
+            q1.style.width='70px';
+            r1.style.width='70px';
+            s1.style.width='70px';
+        }
+        function change2(){
+            var p2=document.getElementById('img1');
+            var q2=document.getElementById('img2');
+            var r2=document.getElementById('img3');
+            var s2=document.getElementById('img4');
+            p2.style.width='70px';
+            q2.style.width='600px';
+            r2.style.width='70px';
+            s2.style.width='70px';
+        }
+        function change3(){
+            var p3=document.getElementById('img1');
+            var q3=document.getElementById('img2');
+            var r3=document.getElementById('img3');
+            var s3=document.getElementById('img4');
+            p3.style.width='70px';
+            q3.style.width='70px';
+            r3.style.width='600px';
+            s3.style.width='70px';
+        }
+        function change4(){
+            var p4=document.getElementById('img1');
+            var q4=document.getElementById('img2');
+            var r4=document.getElementById('img3');
+            var s4=document.getElementById('img4');
+            p4.style.width='70px';
+            q4.style.width='70px';
+            r4.style.width='70px';
+            s4.style.width='600px';
+        }
+    </script>
+    </body>
+</html>
