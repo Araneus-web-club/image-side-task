@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>slideshow</title>
+	<style type="text/css">
+		body{
+			background-color: black;
+		}
+
+		img{
+			float: left;
+
+
+		    margin-right: 20px;  
+			border-radius: 25px ;
+			color: black;
+			cursor: pointer;
+			
+
+		}
+		
+	
+	</style>
+</head>
+<body>
+	<div class="container">
+    <div class="ex 1"><img src="img/img1.jpg" height="680px"  id="img1" onclick="change(1)"></div>
+	<div class="ex 2"><img src="img/img2.jpg"height="680px" width="81px"   id="img2" onclick="change(2)" ></div>
+	<div class="ex 3"><img src="img/img3.jpg" id="img3" height="680px" width="81px"onclick="change(3)" ></div>
+	<div class="ex 4"><img src="img/img4.jpg" id="img4"height="680px" width="81px" onclick="change(4)"></div>
+</div>
+
+<script type="text/javascript">
+	function change(number){
+		var x=document.getElementById("img1");
+		var y=document.getElementById("img2");
+		var z=document.getElementById("img3");
+		var p=document.getElementById("img4");
+		if (number==1)
+		{   x.style.width="1020px";
+	      y.style.width="81px";y.style.height="680px";
+	      z.style.width="81px";y.style.height="680px";
+	      p.style.width="81px";y.style.height="680px";
+	     
+
+			
+		}
+		else if(number==2){
+			y.style.width="1020px";
+	      x.style.width="81px";y.style.height="680px";
+	      z.style.width="81px";y.style.height="680px";
+	      p.style.width="81px";y.style.height="680px";
+
+		}
+		else if(number==3){
+			z.style.width="1020px";
+	      x.style.width="81px";y.style.height="680px";
+	      y.style.width="81px";y.style.height="680px";
+	      p.style.width="81px";y.style.height="680px";
+
+
+		}
+		else{
+			p.style.width="1020px";
+	      x.style.width="81px";y.style.height="680px";
+	      z.style.width="81px";y.style.height="680px";
+	      y.style.width="81px";y.style.height="680px";
+
+
+		}
+		
+
+	}
+</script>
+</body>
+</html>
