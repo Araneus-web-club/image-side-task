@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>side-by-side images</title>
+    </head>
+    <body>
+        <h1 style="position: absolute;left:40%;top:20px;color:red">side-by-side images</h1>
+           
+        <center>
+            <div style="position: absolute;top:100px;left:10%"> 
+            <img src="image1.jpg" id="i1" style="border-radius: 20px;" height="400px" width="500px" onclick="myfunc1()">
+            <img src="image2.jpg" id="i2" style="border-radius: 20px;" height="400px" width="100px" onclick="myfunc2()">
+            <img src="image3.jpg" id="i3"  style="border-radius: 20px;" height="400px" width="100px" onclick="myfunc3()">
+            <img src="image4.jpg" id="i4" style="border-radius: 20px;" height="400px" width="100px" onclick="myfunc4()">
+            
+        </div>
+    </center>
+        <script>
+            function myfunc1()
+            {
+               document.getElementById("i1").width="500";
+               document.getElementById("i2").width="100";
+               document.getElementById("i3").width="100";
+               document.getElementById("i4").width="100";
+            }
+            function myfunc2()
+            {
+               document.getElementById('i1').width="100";
+               document.getElementById('i2').width="500";
+               document.getElementById('i3').width="100";
+               document.getElementById('i4').width="100";
+            }
+            function myfunc3()
+            {
+               document.getElementById('i1').width="100";
+               document.getElementById('i2').width="100";
+               document.getElementById('i3').width="500";
+               document.getElementById('i4').width="100";
+            }
+            function myfunc4()
+            {
+               document.getElementById('i1').width="100";
+               document.getElementById('i2').width="100";
+               document.getElementById('i3').width="100";
+               document.getElementById('i4').width="500";
+            }
+            </script>
+    </body>
+</html>
